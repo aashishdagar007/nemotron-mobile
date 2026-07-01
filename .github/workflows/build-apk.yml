@@ -21,6 +21,10 @@ jobs:
       - name: Regenerate missing Android platform files (gradlew, icons)
         run: flutter create --platforms=android --project-name nemotron_mobile .
 
+      - name: Fix Gradle wrapper version
+        run: |
+          sed -i "s#distributionUrl=.*#distributionUrl=https\\://services.gradle.org/distributions/gradle-8.4-all.zip#" android/gradle/wrapper/gradle-wrapper.properties
+
       - name: Install dependencies
         run: flutter pub get
 
