@@ -19,7 +19,7 @@ jobs:
           channel: 'stable'
 
       - name: Regenerate missing Android platform files (gradlew, icons)
-        run: flutter create --platforms=android .
+        run: flutter create --platforms=android --project-name nemotron_mobile .
 
       - name: Install dependencies
         run: flutter pub get
