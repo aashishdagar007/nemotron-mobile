@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nemotron Code</string>
+    <string name="accessibility_service_description">
+        Lets Nemotron Code see screen content and perform taps, swipes, and text input
+        on your behalf, only when you explicitly send it an instruction inside the app.
+        It does not run in the background without your command.
+    </string>
+</resources>
